@@ -62,7 +62,7 @@
 
 /* CTA "Learn more" link */
 .investors-content > p:nth-child(4) {
-  margin: 0 0 0;
+  margin: 0;
 }
 
 .investors-content > p:nth-child(4) a {
@@ -92,12 +92,6 @@
 }
 
 /* Icons area */
-.investors.block > div > div:nth-child(3) {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-}
-
 .investors-icons-row {
   display: flex;
   flex-direction: row;
@@ -127,6 +121,12 @@
   width: 32px;
   height: 32px;
   display: block;
+}
+
+.investors.block > div > div:nth-child(3) {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
 }
 
 @media (width < 900px) {
