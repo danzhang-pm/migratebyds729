@@ -1,7 +1,7 @@
 /* Footer Mid - logo tagline, social links, legal links */
 footer .footer-mid {
   padding: 30px 0 25px;
-  border-top: 1px solid rgba(255 255 255 / 15%);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 footer .footer-mid > div {
@@ -25,40 +25,25 @@ footer .footer-mid > div > div:nth-child(1) p {
   margin: 0;
 }
 
-footer .footer-mid > div > div:nth-child(2) {
+footer .footer-mid > div > div:nth-child(2),
+footer .footer-mid > div > div:nth-child(3) {
   flex: 1;
   min-width: 150px;
 }
 
-footer .footer-mid > div > div:nth-child(2) p {
-  margin: 4px 0;
-}
-
-footer .footer-mid > div > div:nth-child(2) a {
-  color: #4a7dff;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-footer .footer-mid > div > div:nth-child(2) a:hover {
-  text-decoration: underline;
-}
-
-footer .footer-mid > div > div:nth-child(3) {
-  flex: 2;
-  min-width: 200px;
-}
-
+footer .footer-mid > div > div:nth-child(2) p,
 footer .footer-mid > div > div:nth-child(3) p {
   margin: 4px 0;
 }
 
+footer .footer-mid > div > div:nth-child(2) a,
 footer .footer-mid > div > div:nth-child(3) a {
   color: #4a7dff;
   font-size: 14px;
   text-decoration: none;
 }
 
+footer .footer-mid > div > div:nth-child(2) a:hover,
 footer .footer-mid > div > div:nth-child(3) a:hover {
   text-decoration: underline;
 }

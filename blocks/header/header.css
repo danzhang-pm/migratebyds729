@@ -4,7 +4,7 @@
   width: 100%;
   z-index: 2;
   position: fixed;
-  box-shadow: 0 1px 4px rgb(0 0 / 8%);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
 }
 
 .header.block nav {
@@ -115,14 +115,6 @@
 }
 
 /* brand */
-.header.block .nav-brand {
-  grid-area: brand;
-  flex-basis: auto;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
-}
-
 .header.block .icon-medtronic-logo {
   display: inline-flex;
   align-items: center;
@@ -132,6 +124,14 @@
 .header.block .icon-medtronic-logo img {
   height: 24px;
   width: 96px;
+}
+
+.header.block .nav-brand {
+  grid-area: brand;
+  flex-basis: auto;
+  font-size: var(--heading-font-size-s);
+  font-weight: 700;
+  line-height: 1;
 }
 
 .header.block nav .nav-brand img {
@@ -192,7 +192,7 @@
 
 .header.block nav .nav-tools a {
   font-size: 0.875rem;
-  color: rgb(0 0 / 70%);
+  color: rgb(0 0 0 / 70%);
   text-decoration: none;
 }
 
@@ -205,7 +205,8 @@
     position: relative;
   }
 
-  .header.block nav {
+  .header.block nav,
+  .header.block nav[aria-expanded='true'] {
     display: grid;
     grid-template:
       'brand tools' auto
@@ -214,14 +215,6 @@
     max-width: 1264px;
     padding: 0 32px;
     height: auto;
-  }
-
-  .header.block nav,
-  .header.block nav[aria-expanded='true'] {
-    display: grid;
-    grid-template:
-      'brand tools' auto
-      'sections sections' auto / auto 1fr;
     min-height: 0;
     overflow: visible;
   }
@@ -302,6 +295,10 @@
     transition: background-color 0.2s;
   }
 
+  .header.block nav .nav-sections .default-content-wrapper > ul > li > a:hover {
+    background-color: rgb(255 255 255 / 10%);
+  }
+
   .header.block nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
     position: relative;
@@ -334,13 +331,9 @@
     top: 0;
     width: 220px;
     background-color: #fff;
-    box-shadow: 0 4px 12px rgb(0 0 / 15%);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     padding: 8px 0;
     z-index: 11;
-  }
-
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > a:hover {
-    background-color: rgb(255 255 / 10%);
   }
 
   .header.block nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
@@ -352,7 +345,7 @@
     padding: 8px 0;
     background-color: #fff;
     white-space: initial;
-    box-shadow: 0 4px 12px rgb(0 0 / 15%);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     z-index: 10;
   }
 
@@ -366,24 +359,6 @@
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid #fff;
-  }
-
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li:hover > ul,
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li[aria-expanded='true'] > ul {
-    display: block;
-  }
-
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li.nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    width: 5px;
-    height: 5px;
-    border: 2px solid #666;
-    border-width: 2px 2px 0;
   }
 
   .header.block nav .nav-hamburger {
