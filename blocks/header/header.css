@@ -299,14 +299,8 @@
     background-color: rgb(255 255 255 / 10%);
   }
 
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul {
-    display: none;
-    position: relative;
   }
 
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 0;
-  }
 
   .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li > a {
     display: block;
@@ -322,6 +316,16 @@
     background-color: #f0f5fa;
     color: #003A70;
   }
+  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul {
+    display: none;
+    position: relative;
+  }
+
+  .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li {
+    padding: 0;
+  }
+
+
 
   /* Nested dropdown (3rd level) */
   .header.block nav .nav-sections .default-content-wrapper > ul > li > ul > li > ul {
