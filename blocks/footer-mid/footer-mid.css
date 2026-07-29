@@ -1,0 +1,92 @@
+.footer-mid {
+  background: #1e1e1e;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.footer-mid-wrapper {
+  padding: 0;
+}
+
+.footer-mid > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 24px 25px;
+  gap: 16px;
+}
+
+.footer-mid > div > div:first-child {
+  flex: 0 0 auto;
+}
+
+.footer-mid > div > div:first-child p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.footer-mid > div > div:nth-child(2) {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-mid > div > div:nth-child(2) p {
+  margin: 0;
+}
+
+.footer-mid > div > div:nth-child(2) a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: var(--body-font-family);
+  opacity: 0.8;
+}
+
+.footer-mid > div > div:nth-child(2) a:hover {
+  opacity: 1;
+}
+
+.footer-mid > div > div:nth-child(3) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: center;
+}
+
+.footer-mid > div > div:nth-child(3) p {
+  margin: 0;
+}
+
+.footer-mid > div > div:nth-child(3) a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: var(--body-font-family);
+  white-space: nowrap;
+}
+
+.footer-mid > div > div:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+
+@media (width < 900px) {
+  .footer-mid > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-mid > div > div:nth-child(2),
+  .footer-mid > div > div:nth-child(3) {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "url": "https://www.medtronic.com/en-us/index.html",
+  "fragments": [
+    {
+      "path": "/nav",
+      "children": [
+        {
+          "type": "block",
+          "name": "header",
+          "id": "rc1c1",
+          "bounds": { "x": 0, "y": 0, "width": 1440, "height": 135 }
+        }
+      ]
+    },
+    {
+      "path": "/medtronic-en-us-index",
+      "children": [
+        {
+          "type": "section",
+          "style": "light",
+          "children": [
+            {
+              "type": "block",
+              "name": "hero-video",
+              "id": "rc1c2c1",
+              "bounds": { "x": 0, "y": 135, "width": 1440, "height": 661 }
+            },
+            {
+              "type": "block",
+              "name": "banner-two-col",
+              "id": "rc1c2c2",
+              "bounds": { "x": 0, "y": 666, "width": 1440, "height": 239 }
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "style": "default",
+          "children": [
+            {
+              "type": "block",
+              "name": "news-scroller",
+              "id": "rc1c3c1",
+              "bounds": { "x": 0, "y": 905, "width": 1440, "height": 776 }
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "name": "banner-video",
+          "id": "rc1c3c2",
+          "bounds": { "x": 0, "y": 1682, "width": 1440, "height": 580 }
+        },
+        {
+          "type": "block",
+          "name": "featured-story",
+          "id": "rc1c3c3",
+          "bounds": { "x": 0, "y": 2262, "width": 1440, "height": 216 }
+        },
+        {
+          "type": "section",
+          "style": "light",
+          "children": [
+            {
+              "type": "block",
+              "name": "impact-grid",
+              "id": "rc1c3c4",
+              "bounds": { "x": 0, "y": 2478, "width": 1440, "height": 953 }
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "style": "dark",
+          "children": [
+            {
+              "type": "block",
+              "name": "careers",
+              "id": "rc1c3c5",
+              "bounds": { "x": 0, "y": 3431, "width": 1440, "height": 754 }
+            }
+          ]
+        },
+        {
+          "type": "block",
+          "name": "investors",
+          "id": "rc1c4",
+          "bounds": { "x": 0, "y": 4185, "width": 1440, "height": 754 }
+        }
+      ]
+    },
+    {
+      "path": "/footer",
+      "children": [
+        {
+          "type": "block",
+          "name": "footer",
+          "id": "rc2c1",
+          "bounds": { "x": 64, "y": 4939, "width": 1312, "height": 261 }
+        }
+      ]
+    }
+  ]
+}

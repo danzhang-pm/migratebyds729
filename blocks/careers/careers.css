@@ -1,0 +1,252 @@
+/* ── Careers Block ── */
+main .careers-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+main .careers {
+  background: #00001c;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 754px;
+}
+
+main .careers > div {
+  position: static;
+  z-index: 1;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 110px 59px 100px;
+}
+
+/* Background image overlay */
+main .careers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--careers-bg, none);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+main .careers > div {
+  position: static;
+  z-index: 1;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 110px 59px 0;
+}
+
+/* Left content column */
+.careers-left {
+  flex: 1;
+  max-width: 400px;
+}
+
+.careers-left p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 16px;
+}
+
+.careers-left h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.careers-left p:nth-child(3) {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+  margin: 0 0 32px;
+}
+
+/* CTA button - "Join the team" */
+main .careers .button-wrapper a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 32px;
+  border-radius: 9999px;
+  background: #4a7dff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+main .careers .button-wrapper a.button:any-link:hover {
+  background: #1010eb;
+}
+
+/* Career links below the button */
+.careers-left .button-wrapper + .button-wrapper {
+  margin-top: 24px;
+}
+
+main .careers .button-wrapper {
+  display: block;
+}
+
+main .careers a.button:any-link {
+  color: #4a7dff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  white-space: normal;
+}
+
+main .careers a.button:any-link:hover {
+  color: #87b2ff;
+}
+
+/* Non-button career links (Explore, Talent Network) */
+.careers-left p a:any-link {
+  color: #4a7dff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.careers-left p a:any-link:hover {
+  color: #87b2ff;
+}
+
+/* Separator between career links */
+.careers-left .button-wrapper + p {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.careers-left p + p {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+/* Right column - job tiles */
+.careers-right {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  gap: 2px;
+}
+
+.careers-right .button-wrapper {
+  display: block;
+}
+
+.careers-right a:any-link {
+  width: 207px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: rgba(74, 125, 255, 0.9);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-radius: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.careers-right a:any-link:hover {
+  opacity: 1;
+  background: #4a7dff;
+}
+
+.careers-right a:any-link picture,
+.careers-right a:any-link img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.careers-right a:any-link img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.careers-right a:any-link:hover img {
+  transform: scale(1.1);
+}
+
+/* Mobile */
+@media (width <= 768px) {
+  main .careers > div {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 32px;
+    min-height: auto;
+  }
+
+  .careers-left h2 {
+    font-size: 28px;
+  }
+
+  .careers-left p:nth-child(3) {
+    font-size: 16px;
+  }
+
+  main .careers .button-container a.button:any-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .careers-left p:first-child {
+    font-size: 12px;
+  }
+
+  .careers-right {
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+
+  .careers-right a.button:any-link {
+    width: 107px;
+    height: 102px;
+    font-size: 14px;
+  }
+}
