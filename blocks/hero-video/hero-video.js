@@ -13,7 +13,7 @@ export default async function decorate(block) {
   // Create video element for background
   if (videoSrc) {
     const video = document.createElement('video');
-    video.className = 'hero-video__bg';
+    video.className = 'hero-video-bg';
     video.setAttribute('playsinline', '');
     video.setAttribute('autoplay', '');
     video.setAttribute('loop', '');
