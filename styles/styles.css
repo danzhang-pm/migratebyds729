@@ -1,5 +1,35 @@
+:root {
+  --background-color: white;
+  --light-color: #f8f8f8;
+  --dark-color: #1e1e1e;
+  --text-color: #170f5f;
+  --link-color: #1010eb;
+  --link-hover-color: #1d3ecf;
+  --body-font-family: 'Avenir Next', 'AvenirNextWorld', avenir, helvetica, arial, sans-serif;
+  --heading-font-family: 'Avenir Next', 'AvenirNextWorld', avenir, helvetica, arial, sans-serif;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
+  --heading-font-size-xxl: 52px;
+  --heading-font-size-xl: 47px;
+  --heading-font-size-l: 36px;
+  --heading-font-size-m: 24px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
+  --nav-height: 64px;
+}
 
-/* Hero section with background image */
+.grey { background-color: #f5f5f5; }
+.dark { background-color: #00001c; color: white; }
+.dark h2, .dark p { color: white; }
+.dark a { color: #6b96ff; }
+
+h1 { font-size: var(--heading-font-size-xl); font-weight: 700; color: #170f5f; }
+h2 { font-size: var(--heading-font-size-xxl); font-weight: 700; color: #170f5f; }
+
+.grey .cards-card-body { background: white; box-shadow: 0 4px 16px rgba(0,0,0,0.12); padding: 16px; }
+.grey .cards-card-body h3 { font-size: var(--heading-font-size-s); color: #170f5f; }
+
 main > div:first-child {
   position: relative;
   min-height: 400px;
@@ -12,12 +42,5 @@ main > div:first-child {
   background-size: cover;
   background-position: center;
 }
-
-main > div:first-child h1 {
-  color: #170f5f;
-  font-size: 47px;
-}
-
-main > div:first-child p {
-  color: #170f5f;
-}
+main > div:first-child h1 { color: #170f5f; font-size: 47px; }
+main > div:first-child p { color: #170f5f; }
