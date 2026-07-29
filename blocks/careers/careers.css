@@ -1,1 +1,121 @@
-404: Not Found
+.block.careers {
+  background: #00001c;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.block.careers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://www.medtronic.com/content/dam/medtronic-wide/public/channel-configuration/adobe-target/corporate/images/careers-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.block.careers > div {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 59px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.careers-left {
+  flex: 1;
+}
+
+.careers-right {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.careers-left p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #00a0e3;
+  margin: 0 0 16px;
+}
+
+.careers-left h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.careers-left p:nth-child(3) {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin: 0 0 32px;
+  max-width: 400px;
+}
+
+.careers-left p:last-child a {
+  display: inline-block;
+  color: #fff;
+  background: #00a0e3;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.careers-left p:last-child a:hover {
+  background: #0077b3;
+}
+
+.careers-right a {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 16px 32px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.careers-right a:hover {
+  border-color: #00a0e3;
+  background: rgba(0,160,227,0.1);
+}
+
+@media (width <= 768px) {
+  .block.careers > div {
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+
+  .careers-left h2 {
+    font-size: 28px;
+  }
+
+  .careers-right {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .careers-right a {
+    text-align: center;
+  }
+}
