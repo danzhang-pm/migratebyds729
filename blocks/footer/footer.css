@@ -1,0 +1,13 @@
+footer {
+  background-color: #1e1e1e;
+  font-size: 14px;
+}
+
+footer .footer > div {
+  margin: auto;
+  max-width: 1200px;
+}
+
+footer .footer p {
+  margin: 0;
+}

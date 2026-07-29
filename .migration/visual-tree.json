@@ -1,0 +1,493 @@
+{
+  "nodeCount": 29,
+  "nodeMap": {
+    "r": "body",
+    "rc1": "body > div.root.container.responsivegrid",
+    "rc1c1": "#container-5bd3147e2a > div > div.container.responsivegrid.com-header-container.aem-GridColumn.aem-GridColumn--default--12",
+    "rc1c1c1": "#container-c76421958d > div > div.header.aem-GridColumn.aem-GridColumn--default--12 > div > div.mdt-header",
+    "rc1c1c2": "#container-c76421958d > div > div.header.aem-GridColumn.aem-GridColumn--default--12 > div > div.mdt-header-menu",
+    "rc1c2": "#container-5bd3147e2a > div > div.container.responsivegrid.hero-main-content.aem-GridColumn.aem-GridColumn--default--12",
+    "rc1c2c1": "#container-bef6b8dae3 > div:nth-child(1)",
+    "rc1c2c1c1": "#Header-video > section > video",
+    "rc1c2c1c2": "#Header-video > section > div",
+    "rc1c2c2": "#container-bef6b8dae3 > div:nth-child(2)",
+    "rc1c3": "#container-5bd3147e2a > div > main",
+    "rc1c3c1": "#container-bc4f03189e > div > div:nth-child(3)",
+    "rc1c3c1c1": "#News-Media > div > div.news-media-sectionTarget",
+    "rc1c3c1c1c1": "#News-Media > div > div.news-media-sectionTarget > div",
+    "rc1c3c1c1c2": "#News-Media > div > div.news-media-sectionTarget > h2",
+    "rc1c3c1c2": "#scroller",
+    "rc1c3c2": "#container-bc4f03189e > div > div:nth-child(4)",
+    "rc1c3c3": "#container-bc4f03189e > div > div:nth-child(5)",
+    "rc1c3c3c1": "#container-bc4f03189e > div > div:nth-child(5) > div > div > div > a > div.left-section",
+    "rc1c3c3c1c1": "#container-bc4f03189e > div > div:nth-child(5) > div > div > div > a > div.left-section > div.eyebrow",
+    "rc1c3c3c1c2": "#cdq_element_14",
+    "rc1c3c3c2": "#container-bc4f03189e > div > div:nth-child(5) > div > div > div > a > div.center-section",
+    "rc1c3c4": "#container-bc4f03189e > div > div:nth-child(6)",
+    "rc1c3c5": "#container-bc4f03189e > div > div:nth-child(7)",
+    "rc1c4": "#container-5bd3147e2a > div > div:nth-child(5)",
+    "rc2": "body > footer",
+    "rc2c1": "#container-ca0a6ecab2 > div > div.container.responsivegrid.mdt-footer-sitenav.aem-GridColumn.aem-GridColumn--default--12",
+    "rc2c2": "#container-ca0a6ecab2 > div > div.container.responsivegrid.mdt-footer-section.aem-GridColumn.aem-GridColumn--default--12",
+    "rc2c3": "#container-ca0a6ecab2 > div > div:nth-child(3)"
+  },
+  "text": "r @0,0 1440x5417\n  rc1 @0,0 1440x4939\n    rc1c1 [bg:gradient] @0,0 1440x135\n      rc1c1c1 [3x1] @0,0 1440x62 \"Menu .search-prefilters { disp...\"\n      rc1c1c2 [2x1] @0,77 1440x58 \"United States of America Unite...\"\n    rc1c2 @0,135 1440x770\n      rc1c2c1 [bg:color] @0,5 1440x661\n        rc1c2c1c1 @0,5 1440x661 \"Your browser does not support ...\"\n        rc1c2c1c2 [2x1] @177,190 1087x416 \"HEALTHCARE TECHNOLOGY Revoluti...\"\n      rc1c2c2 [2x1] @0,666 1440x239 \"COMMUNITIES First 100 Medtroni...\"\n    rc1c3 @0,905 1440x3280\n      rc1c3c1 @0,905 1440x776\n        rc1c3c1c1 @0,905 1440x186\n          rc1c3c1c1c1 @64,969 1376x40 \"THE LATEST\"\n          rc1c3c1c1c2 @64,1034 1376x57 \"Innovation in action\"\n        rc1c3c1c2 [12x1] @0,1116 1440x565 \"OUR IMPACT Closing the gap wit...\"\n      rc1c3c2 [bg:color] @0,1682 1440x580 \"Your browser does not support ...\"\n      rc1c3c3 [2x1] [bg:color] @0,2262 1440x216\n        rc1c3c3c1 @65,2297 939x114\n          rc1c3c3c1c1 @65,2297 939x40 \"HEALTHCARE TECHNOLOGY\"\n          rc1c3c3c1c2 @65,2369 939x42 \"How a 1960s blueprint became t...\"\n        rc1c3c3c2 @65,2411 939x32 \"One engineer’s fantastical 100...\"\n      rc1c3c4 [3x2] @0,2478 1440x953 \"Our Impact A healthy life. A h...\"\n      rc1c3c5 [bg:color] @0,3431 1440x754 \"Careers Careers that change li...\"\n    rc1c4 [bg:image] @0,4185 1440x754 \"Investors Shareholders spotlig...\"\n  rc2 [bg:color] @0,4939 1440x478\n    rc2c1 [3x1] @64,4939 1312x261 \"Careers Contact & Support Orde...\"\n    rc2c2 [2x1] @64,5200 1312x136 \"Facebook Youtube Linkedin Your...\"\n    rc2c3 [2x1] @64,5336 1312x81 \"Operational Headquarters 710 M...\"\n",
+  "tree": {
+    "background": {
+      "raw": "rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box",
+      "source": "css",
+      "type": "color",
+      "value": "rgb(245, 245, 245)"
+    },
+    "bounds": {
+      "height": 5417,
+      "width": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "children": [
+      {
+        "bounds": {
+          "height": 4939,
+          "width": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "children": [
+          {
+            "background": {
+              "raw": "rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0.83) 0%, rgba(255, 255, 255, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+              "source": "css",
+              "type": "gradient",
+              "value": "linear-gradient(rgba(0, 0, 0, 0.83) 0%, rgba(255, 255, 255, 0) 100%)"
+            },
+            "bounds": {
+              "height": 135,
+              "width": 1440,
+              "x": 0,
+              "y": 0
+            },
+            "children": [
+              {
+                "bounds": {
+                  "height": 62,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "className": "mdt-header",
+                "layout": "3x1",
+                "selector": "#container-c76421958d > div > div.header.aem-GridColumn.aem-GridColumn--default--12 > div > div.mdt-header",
+                "tag": "DIV",
+                "text": "Menu .search-prefilters { disp"
+              },
+              {
+                "bounds": {
+                  "height": 58,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 77
+                },
+                "children": [],
+                "className": "mdt-header-menu",
+                "layout": "2x1",
+                "selector": "#container-c76421958d > div > div.header.aem-GridColumn.aem-GridColumn--default--12 > div > div.mdt-header-menu",
+                "tag": "DIV",
+                "text": "United States of America Unite"
+              }
+            ],
+            "className": "container",
+            "selector": "#container-5bd3147e2a > div > div.container.responsivegrid.com-header-container.aem-GridColumn.aem-GridColumn--default--12",
+            "tag": "DIV"
+          },
+          {
+            "bounds": {
+              "height": 770,
+              "width": 1440,
+              "x": 0,
+              "y": 135
+            },
+            "children": [
+              {
+                "background": {
+                  "raw": "rgb(230, 241, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "source": "css",
+                  "type": "color",
+                  "value": "rgb(230, 241, 255)"
+                },
+                "bounds": {
+                  "height": 661,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 5
+                },
+                "children": [
+                  {
+                    "bounds": {
+                      "height": 661,
+                      "width": 1440,
+                      "x": 0,
+                      "y": 5
+                    },
+                    "children": [],
+                    "className": "hero-jon__bg",
+                    "selector": "#Header-video > section > video",
+                    "tag": "VIDEO",
+                    "text": "Your browser does not support "
+                  },
+                  {
+                    "background": {
+                      "raw": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+                      "source": "css",
+                      "type": "color",
+                      "value": "rgb(255, 255, 255)"
+                    },
+                    "bounds": {
+                      "height": 416,
+                      "width": 1087,
+                      "x": 177,
+                      "y": 190
+                    },
+                    "children": [],
+                    "className": "hero-jon__card",
+                    "layout": "2x1",
+                    "selector": "#Header-video > section > div",
+                    "tag": "DIV",
+                    "text": "HEALTHCARE TECHNOLOGY Revoluti"
+                  }
+                ],
+                "className": "migration",
+                "selector": "#container-bef6b8dae3 > div:nth-child(1)",
+                "tag": "DIV"
+              },
+              {
+                "background": {
+                  "raw": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "source": "css",
+                  "type": "color",
+                  "value": "rgb(255, 255, 255)"
+                },
+                "bounds": {
+                  "height": 239,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 666
+                },
+                "children": [],
+                "className": "migration",
+                "layout": "2x1",
+                "selector": "#container-bef6b8dae3 > div:nth-child(2)",
+                "tag": "DIV",
+                "text": "COMMUNITIES First 100 Medtroni"
+              }
+            ],
+            "className": "container",
+            "selector": "#container-5bd3147e2a > div > div.container.responsivegrid.hero-main-content.aem-GridColumn.aem-GridColumn--default--12",
+            "tag": "DIV"
+          },
+          {
+            "bounds": {
+              "height": 3280,
+              "width": 1440,
+              "x": 0,
+              "y": 905
+            },
+            "children": [
+              {
+                "bounds": {
+                  "height": 776,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 905
+                },
+                "children": [
+                  {
+                    "bounds": {
+                      "height": 186,
+                      "width": 1440,
+                      "x": 0,
+                      "y": 905
+                    },
+                    "children": [
+                      {
+                        "bounds": {
+                          "height": 40,
+                          "width": 1376,
+                          "x": 64,
+                          "y": 969
+                        },
+                        "children": [],
+                        "className": "eyebrow",
+                        "selector": "#News-Media > div > div.news-media-sectionTarget > div",
+                        "tag": "DIV",
+                        "text": "THE LATEST"
+                      },
+                      {
+                        "bounds": {
+                          "height": 57,
+                          "width": 1376,
+                          "x": 64,
+                          "y": 1034
+                        },
+                        "children": [],
+                        "className": "headline",
+                        "selector": "#News-Media > div > div.news-media-sectionTarget > h2",
+                        "tag": "H2",
+                        "text": "Innovation in action"
+                      }
+                    ],
+                    "className": "news-media-sectionTarget",
+                    "selector": "#News-Media > div > div.news-media-sectionTarget",
+                    "tag": "DIV"
+                  },
+                  {
+                    "bounds": {
+                      "height": 565,
+                      "width": 1440,
+                      "x": 0,
+                      "y": 1116
+                    },
+                    "children": [],
+                    "className": "scroller",
+                    "id": "scroller",
+                    "layout": "12x1",
+                    "selector": "#scroller",
+                    "tag": "DIV",
+                    "text": "OUR IMPACT Closing the gap wit"
+                  }
+                ],
+                "className": "migration",
+                "selector": "#container-bc4f03189e > div > div:nth-child(3)",
+                "tag": "DIV"
+              },
+              {
+                "background": {
+                  "raw": "rgb(30, 30, 30) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "source": "css",
+                  "type": "color",
+                  "value": "rgb(30, 30, 30)"
+                },
+                "bounds": {
+                  "height": 580,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 1682
+                },
+                "children": [],
+                "className": "migration",
+                "selector": "#container-bc4f03189e > div > div:nth-child(4)",
+                "tag": "DIV",
+                "text": "Your browser does not support "
+              },
+              {
+                "background": {
+                  "raw": "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "source": "css",
+                  "type": "color",
+                  "value": "rgb(0, 0, 0)"
+                },
+                "bounds": {
+                  "height": 216,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 2262
+                },
+                "children": [
+                  {
+                    "bounds": {
+                      "height": 114,
+                      "width": 939,
+                      "x": 65,
+                      "y": 2297
+                    },
+                    "children": [
+                      {
+                        "bounds": {
+                          "height": 40,
+                          "width": 939,
+                          "x": 65,
+                          "y": 2297
+                        },
+                        "children": [],
+                        "className": "eyebrow",
+                        "selector": "#container-bc4f03189e > div > div:nth-child(5) > div > div > div > a > div.left-section > div.eyebrow",
+                        "tag": "DIV",
+                        "text": "HEALTHCARE TECHNOLOGY"
+                      },
+                      {
+                        "bounds": {
+                          "height": 42,
+                          "width": 939,
+                          "x": 65,
+                          "y": 2369
+                        },
+                        "children": [],
+                        "className": "headline",
+                        "id": "cdq_element_14",
+                        "selector": "#cdq_element_14",
+                        "tag": "DIV",
+                        "text": "How a 1960s blueprint became t"
+                      }
+                    ],
+                    "className": "left-section",
+                    "selector": "#container-bc4f03189e > div > div:nth-child(5) > div > div > div > a > div.left-section",
+                    "tag": "DIV"
+                  },
+                  {
+                    "bounds": {
+                      "height": 32,
+                      "width": 939,
+                      "x": 65,
+                      "y": 2411
+                    },
+                    "children": [],
+                    "className": "center-section",
+                    "selector": "#container-bc4f03189e > div > div:nth-child(5) > div > div > div > a > div.center-section",
+                    "tag": "DIV",
+                    "text": "One engineer’s fantastical 100"
+                  }
+                ],
+                "className": "migration",
+                "layout": "2x1",
+                "selector": "#container-bc4f03189e > div > div:nth-child(5)",
+                "tag": "DIV"
+              },
+              {
+                "background": {
+                  "raw": "rgb(245, 245, 245) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "source": "css",
+                  "type": "color",
+                  "value": "rgb(245, 245, 245)"
+                },
+                "bounds": {
+                  "height": 953,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 2478
+                },
+                "children": [],
+                "className": "migration",
+                "layout": "3x2",
+                "selector": "#container-bc4f03189e > div > div:nth-child(6)",
+                "tag": "DIV",
+                "text": "Our Impact A healthy life. A h"
+              },
+              {
+                "background": {
+                  "raw": "rgb(0, 0, 28) none repeat scroll 0% 0% / auto padding-box border-box",
+                  "source": "css",
+                  "type": "color",
+                  "value": "rgb(0, 0, 28)"
+                },
+                "bounds": {
+                  "height": 754,
+                  "width": 1440,
+                  "x": 0,
+                  "y": 3431
+                },
+                "children": [],
+                "className": "migration",
+                "selector": "#container-bc4f03189e > div > div:nth-child(7)",
+                "tag": "DIV",
+                "text": "Careers Careers that change li"
+              }
+            ],
+            "className": "container",
+            "selector": "#container-5bd3147e2a > div > main",
+            "tag": "MAIN"
+          },
+          {
+            "background": {
+              "raw": "rgba(211, 211, 211, 0.5) url(\"https://www.medtronic.com/content/dam/medtronic-com/us-en/corporate/graphics/hp-investors-cnpt.png\") repeat scroll 50% 50% / cover padding-box border-box",
+              "source": "css",
+              "type": "image",
+              "value": "https://www.medtronic.com/content/dam/medtronic-com/us-en/corporate/graphics/hp-investors-cnpt.png"
+            },
+            "bounds": {
+              "height": 754,
+              "width": 1440,
+              "x": 0,
+              "y": 4185
+            },
+            "children": [],
+            "className": "container",
+            "selector": "#container-5bd3147e2a > div > div:nth-child(5)",
+            "tag": "DIV",
+            "text": "Investors Shareholders spotlig"
+          }
+        ],
+        "className": "root",
+        "selector": "body > div.root.container.responsivegrid",
+        "tag": "DIV"
+      },
+      {
+        "background": {
+          "raw": "rgb(30, 30, 30) none repeat scroll 0% 0% / auto padding-box border-box",
+          "source": "css",
+          "type": "color",
+          "value": "rgb(30, 30, 30)"
+        },
+        "bounds": {
+          "height": 478,
+          "width": 1440,
+          "x": 0,
+          "y": 4939
+        },
+        "children": [
+          {
+            "bounds": {
+              "height": 261,
+              "width": 1312,
+              "x": 64,
+              "y": 4939
+            },
+            "children": [],
+            "className": "container",
+            "layout": "3x1",
+            "selector": "#container-ca0a6ecab2 > div > div.container.responsivegrid.mdt-footer-sitenav.aem-GridColumn.aem-GridColumn--default--12",
+            "tag": "DIV",
+            "text": "Careers Contact & Support Orde"
+          },
+          {
+            "bounds": {
+              "height": 136,
+              "width": 1312,
+              "x": 64,
+              "y": 5200
+            },
+            "children": [],
+            "className": "container",
+            "layout": "2x1",
+            "selector": "#container-ca0a6ecab2 > div > div.container.responsivegrid.mdt-footer-section.aem-GridColumn.aem-GridColumn--default--12",
+            "tag": "DIV",
+            "text": "Facebook Youtube Linkedin Your"
+          },
+          {
+            "bounds": {
+              "height": 81,
+              "width": 1312,
+              "x": 64,
+              "y": 5336
+            },
+            "children": [],
+            "className": "container",
+            "layout": "2x1",
+            "selector": "#container-ca0a6ecab2 > div > div:nth-child(3)",
+            "tag": "DIV",
+            "text": "Operational Headquarters 710 M"
+          }
+        ],
+        "selector": "body > footer",
+        "tag": "FOOTER"
+      }
+    ],
+    "className": "dark-theme",
+    "selector": "body",
+    "tag": "BODY"
+  },
+  "viewport": {
+    "height": 900,
+    "width": 1440
+  }
+}
