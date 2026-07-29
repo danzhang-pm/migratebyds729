@@ -81,7 +81,9 @@ function decorateCareers(block, cells) {
   block.classList.add('impact-grid--careers');
   const section = block.closest('.section');
   if (section) {
-    const bgImage = section.dataset.backgroundImage || section.style.backgroundImage || getComputedStyle(section).backgroundImage;
+    const bgImage = section.dataset.backgroundImage
+      || section.style.backgroundImage
+      || getComputedStyle(section).backgroundImage;
     if (bgImage && bgImage !== 'none') {
       block.style.setProperty('--careers-bg', bgImage);
     }
