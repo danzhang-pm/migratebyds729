@@ -267,10 +267,6 @@
     transition: background-color 0.2s;
   }
 
-  .header.block nav .nav-sections .default-content-wrapper > ul > li > a:hover {
-    background-color: rgb(255 255 255 / 10%);
-  }
-
   .header.block nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
     position: relative;
@@ -305,6 +301,10 @@
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     padding: 8px 0;
     z-index: 11;
+  }
+
+  .header.block nav .nav-sections .default-content-wrapper > ul > li > a:hover {
+    background-color: rgb(255 255 255 / 10%);
   }
 
   .header.block nav .nav-sections .default-content-wrapper > ul > li > ul::before {
