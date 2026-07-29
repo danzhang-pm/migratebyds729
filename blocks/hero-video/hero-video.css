@@ -40,7 +40,7 @@
   align-items: center;
   gap: 40px;
   background: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 12%);
   margin: 0 176px;
   max-width: 1087px;
   padding: 27px 0 37px 39px;
@@ -48,11 +48,11 @@
   bottom: 0;
 }
 
-.block.hero-video .hero-video__text {
+.block.hero-video .hero-video-text {
   flex: 1;
 }
 
-.block.hero-video .hero-video__text > p:first-child {
+.block.hero-video .hero-video-text > p:first-child {
   margin-bottom: 22px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 main .block.hero-video p,
-main .block.hero-video .hero-video__text > p {
+main .block.hero-video .hero-video-text > p {
   font-size: 16px;
   line-height: 1.6;
   color: #170f5f;
@@ -91,11 +91,11 @@ main .block.hero-video .hero-video__text > p {
   font-family: var(--body-font-family);
 }
 
-main .block.hero-video .hero-video__text > p:last-child {
+main .block.hero-video .hero-video-text > p:last-child {
   display: inline;
 }
 
-main .block.hero-video .hero-video__text a:any-link {
+main .block.hero-video .hero-video-text a:any-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -110,11 +110,11 @@ main .block.hero-video .hero-video__text a:any-link {
   white-space: nowrap;
 }
 
-main .block.hero-video .hero-video__text a:any-link:hover {
+main .block.hero-video .hero-video-text a:any-link:hover {
   text-decoration: underline;
 }
 
-.block.hero-video .hero-video__text .icon-arrow-blue img {
+.block.hero-video .hero-video-text .icon-arrow-blue img {
   width: 32px;
   height: 32px;
 }
@@ -136,7 +136,7 @@ main .block.hero-video .hero-video__text a:any-link:hover {
 }
 
 /* Video pause button */
-.block.hero-video .hero-video__pause {
+.block.hero-video .hero-video-pause {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -144,7 +144,7 @@ main .block.hero-video .hero-video__text a:any-link:hover {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.53);
+  background: rgb(0 0 0 / 53%);
   color: #fff;
   border: none;
   font-size: 14px;
@@ -156,7 +156,7 @@ main .block.hero-video .hero-video__text a:any-link:hover {
   transition: opacity 0.2s;
 }
 
-.block.hero-video .hero-video__pause:hover {
+.block.hero-video .hero-video-pause:hover {
   opacity: 1;
 }
 
@@ -167,7 +167,7 @@ main .block.hero-video .hero-video__text a:any-link:hover {
 
   .block.hero-video > div > div:nth-child(2) {
     flex-direction: column;
-    margin: 0 24px 0 24px;
+    margin: 0 24px;
     padding: 24px;
     max-width: 100%;
   }

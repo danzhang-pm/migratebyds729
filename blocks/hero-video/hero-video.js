@@ -27,7 +27,7 @@ export default async function decorate(block) {
 
     // Create pause/play button
     const pauseBtn = document.createElement('button');
-    pauseBtn.className = 'hero-video__pause';
+    pauseBtn.className = 'hero-video-pause';
     pauseBtn.setAttribute('aria-pressed', 'false');
     pauseBtn.setAttribute('aria-label', 'Pause background video');
     pauseBtn.textContent = '❚❚';
@@ -51,7 +51,7 @@ export default async function decorate(block) {
 
   // Wrap existing children in a div without removing them from cell first
   const textContent = document.createElement('div');
-  textContent.className = 'hero-video__text';
+  textContent.className = 'hero-video-text';
 
   // Move children one by one
   while (textCell.firstChild) {

@@ -45,7 +45,7 @@
 .news-item {
   flex: 0 0 304px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
   overflow: hidden;
   white-space: normal;
 }
@@ -70,7 +70,7 @@
 .news-item a > div:last-child p {
   font-size: 12px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.77);
+  color: rgb(0 0 0 / 77%);
   text-transform: uppercase;
   letter-spacing: 1.286px;
   margin: 0 0 8px 0;

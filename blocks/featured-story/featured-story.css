@@ -5,8 +5,8 @@
 }
 
 .featured-story {
-  --text-color: #ffffff;
-  --eyebrow-color: rgba(255, 255, 255, 0.7);
+  --text-color: #fff;
+  --eyebrow-color: rgb(255 255 255 / 70%);
   --link-color: #4a7dff;
   --block-padding: 35px 65px;
 
@@ -66,7 +66,7 @@
   left: 0;
   width: 170px;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgb(255 255 255 / 35%);
 }
 
 .featured-story > div > div:first-child h2 {

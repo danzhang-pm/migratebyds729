@@ -1,7 +1,7 @@
 .footer-mid {
   background: #1e1e1e;
   color: #fff;
-  border-top: 1px solid rgba(255, 255, 255, 0.36);
+  border-top: 1px solid rgb(255 255 255 / 36%);
 }
 
 .footer-mid-wrapper {

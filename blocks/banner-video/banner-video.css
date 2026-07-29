@@ -6,9 +6,9 @@ main .banner-video-wrapper {
 
 .banner-video {
   --block-bg: #1E1E1E;
-  --block-text: #ffffff;
+  --block-text: #fff;
   --accent-color: #4A7DFF;
-  --info-bar-bg: rgba(12, 12, 165, 0.6);
+  --info-bar-bg: rgb(12 12 165 / 60%);
 
   background: var(--block-bg);
   color: var(--block-text);
@@ -45,7 +45,7 @@ main .banner-video-wrapper {
 
 /* Eyebrow */
 .banner-video .eyebrow {
-  color: rgba(255, 255, 255, 0.70);
+  color: rgb(255 255 255 / 70%);
   font-size: 12px;
   font-weight: 500;
   line-height: 160%;
@@ -64,12 +64,12 @@ main .banner-video-wrapper {
   left: 0;
   width: 192px;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgb(255 255 255 / 35%);
 }
 
 /* Headline */
 .banner-video h2 {
-  color: #ffffff;
+  color: #fff;
   font-size: 52px;
   font-weight: 700;
   line-height: 110%;
@@ -79,7 +79,7 @@ main .banner-video-wrapper {
 
 /* Description copy */
 .banner-video .copy {
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   line-height: 160%;
   max-width: 304px;
@@ -164,7 +164,7 @@ main .banner-video .cta-wrapper:hover::after {
 }
 
 .banner-video .stat-value {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-size: clamp(32px, 4vw, 72px);
   font-weight: 200;
@@ -173,7 +173,7 @@ main .banner-video .cta-wrapper:hover::after {
 }
 
 .banner-video .stat-label {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-size: clamp(12px, 1vw, 20px);
   font-weight: 500;
@@ -199,7 +199,7 @@ main .banner-video .cta-wrapper:hover::after {
 }
 
 .banner-video .bottom-link a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Responsive - tablet/mobile */
