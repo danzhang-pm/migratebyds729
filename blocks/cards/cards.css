@@ -2,18 +2,28 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding-bottom: 8px;
+  white-space: nowrap;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  flex: 0 0 304px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  padding: 24px;
 }
 
 .cards .cards-card-image {
@@ -22,6 +32,7 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 382px;
   object-fit: cover;
+  display: block;
 }

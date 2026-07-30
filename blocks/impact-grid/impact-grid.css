@@ -16,15 +16,15 @@
   padding: 81px 66px;
 }
 
-/* Main grid: 2-column layout (left main card + stats, right access card) */
-.impact-grid > div:first-of-type {
+/* Grid layout: gradient card spans left, access card to the right */
+.impact-grid > div {
   display: grid;
   grid-template-columns: 1fr 295px;
   gap: var(--subsection-gap);
 }
 
-/* Left column holds both impact card and stats */
-.impact-grid-impact-card {
+/* First child = gradient card (Our Impact) */
+.impact-grid > div > div:first-child {
   background: var(--impact-card-bg);
   color: var(--impact-card-text);
   padding: 53px 78px;
@@ -35,7 +35,7 @@
   box-sizing: border-box;
 }
 
-.impact-grid-impact-card p:first-child {
+.impact-grid > div > div:first-child p:first-child {
   font-size: 12px;
   font-weight: 500;
   line-height: 19px;
@@ -46,7 +46,7 @@
   margin: 0;
 }
 
-.impact-grid-impact-card h2 {
+.impact-grid > div > div:first-child h2 {
   font-size: 52px;
   font-weight: 700;
   line-height: 57px;
@@ -55,7 +55,7 @@
   margin: 0;
 }
 
-.impact-grid-impact-card p:nth-child(3) {
+.impact-grid > div > div:first-child p:nth-child(3) {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -63,8 +63,7 @@
   margin: 0;
 }
 
-.impact-grid-impact-card a.button:any-link,
-.impact-grid-impact-card a:any-link {
+.impact-grid > div > div:first-child a:any-link {
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
@@ -73,16 +72,84 @@
   background: none;
   border: none;
   padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-/* Stats row - three stat cards */
-.impact-grid-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+/* Second child = access card (Impact Report) */
+.impact-grid > div > div:nth-child(2) {
+  background: var(--access-card-bg);
+  color: var(--access-card-text);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  grid-row: span 4;
 }
 
-.impact-grid-stats > div {
+.impact-grid > div > div:nth-child(2) picture {
+  line-height: 0;
+  display: block;
+}
+
+.impact-grid > div > div:nth-child(2) img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.impact-grid > div > div:nth-child(2) > div:last-child {
+  padding: 0 22px 30px 30px;
+}
+
+.impact-grid > div > div:nth-child(2) p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: var(--access-card-text);
+  padding: 21px 22px 0 30px;
+  margin: 0;
+}
+
+.impact-grid > div > div:nth-child(2) h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  color: var(--access-card-text);
+  margin: 8px 0;
+  padding: 0 22px 0 30px;
+}
+
+.impact-grid > div > div:nth-child(2) p:nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: var(--access-card-text);
+  margin: 0;
+  padding: 8px 22px 0 30px;
+}
+
+.impact-grid > div > div:nth-child(2) a:any-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #4a7dff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0 22px 30px 30px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Stat items */
+.impact-grid > div > div:nth-child(3),
+.impact-grid > div > div:nth-child(4),
+.impact-grid > div > div:nth-child(5) {
   background: var(--stat-bg);
   padding: 20px 0;
   display: flex;
@@ -93,13 +160,9 @@
   box-sizing: border-box;
 }
 
-.impact-grid-stats img {
-  width: 66px;
-  height: 66px;
-  object-fit: contain;
-}
-
-.impact-grid-stats p:nth-child(2) {
+.impact-grid > div > div:nth-child(3) p:first-child,
+.impact-grid > div > div:nth-child(4) p:first-child,
+.impact-grid > div > div:nth-child(5) p:first-child {
   font-size: 72px;
   font-weight: 200;
   line-height: 86.4px;
@@ -107,7 +170,9 @@
   margin: 0;
 }
 
-.impact-grid-stats p:nth-child(3) {
+.impact-grid > div > div:nth-child(3) p:nth-child(2),
+.impact-grid > div > div:nth-child(4) p:nth-child(2),
+.impact-grid > div > div:nth-child(5) p:nth-child(2) {
   font-size: 19px;
   font-weight: 400;
   line-height: 30.4px;
@@ -115,8 +180,8 @@
   margin: 0;
 }
 
-/* Last stat card has a link in the bottom right */
-.impact-grid-stats > div:last-child a:any-link {
+/* Link on last stat */
+.impact-grid > div > div:nth-child(5) a:any-link {
   position: absolute;
   bottom: 26px;
   right: 40px;
@@ -129,100 +194,38 @@
   padding: 0;
 }
 
-/* Right column - access card */
-.impact-grid > div:first-of-type > div:last-child {
-  background: var(--access-card-bg);
-  display: flex;
-  flex-direction: column;
-}
-
-.impact-grid > div:first-of-type > div:last-child picture {
-  line-height: 0;
-  display: block;
-}
-
-.impact-grid > div:first-of-type > div:last-child img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.impact-grid > div:first-of-type > div:last-child > div:last-child {
-  padding: 0 22px 30px 30px;
-  color: var(--access-card-text);
-}
-
-.impact-grid > div:first-of-type > div:last-child > div:last-child p:first-child {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 19px;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
-  color: var(--access-card-text);
-  padding: 21px 0 21px;
-  margin: 0;
-}
-
-.impact-grid > div:first-of-type > div:last-child > div:last-child h3 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 41.6px;
-  color: var(--access-card-text);
-  margin: 0;
-  padding: 0;
-}
-
-.impact-grid > div:first-of-type > div:last-child > div:last-child p:nth-child(3) {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25.6px;
-  color: var(--access-card-text);
-  margin: 0;
-  padding-top: 8px;
-}
-
-.impact-grid > div:first-of-type > div:last-child a.button:any-link,
-.impact-grid > div:first-of-type > div:last-child a:any-link {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
-  color: #4a7dff;
-  text-decoration: none;
-  background: none;
-  border: none;
-  padding: 0;
-}
-
 @media (width <= 900px) {
   .impact-grid {
     padding: 40px 20px;
   }
 
-  .impact-grid > div:first-of-type {
+  .impact-grid > div {
     grid-template-columns: 1fr;
   }
 
-  .impact-grid-impact-card {
+  .impact-grid > div > div:first-child {
     min-height: auto;
     padding: 40px 30px;
   }
 
-  .impact-grid-impact-card h2 {
+  .impact-grid > div > div:first-child h2 {
     font-size: 36px;
     line-height: 42px;
     padding: 20px 0;
   }
 
-  .impact-grid-stats {
-    grid-template-columns: 1fr;
+  .impact-grid > div > div:nth-child(2) {
+    grid-row: auto;
   }
 
-  .impact-grid-stats p:nth-child(2) {
+  .impact-grid > div > div:nth-child(3) p:first-child,
+  .impact-grid > div > div:nth-child(4) p:first-child,
+  .impact-grid > div > div:nth-child(5) p:first-child {
     font-size: 48px;
     line-height: 56px;
   }
 
-  .impact-grid-stats > div:last-child a:any-link {
+  .impact-grid > div > div:nth-child(5) a:any-link {
     position: static;
     margin-top: 12px;
   }

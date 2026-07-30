@@ -11,6 +11,7 @@
   overflow: hidden;
 }
 
+/* Background video from first cell */
 .block.hero-video picture,
 .block.hero-video video {
   position: absolute;
@@ -30,11 +31,12 @@
   z-index: 1;
 }
 
-/* Row structure: [video cell] is hidden/absolute, [text+image row] is the visible card */
+/* Hide the video source cell */
 .block.hero-video > div > div:first-child {
   display: none;
 }
 
+/* Text and product image card at bottom */
 .block.hero-video > div > div:nth-child(2) {
   display: flex;
   align-items: center;
@@ -117,6 +119,17 @@ main .block.hero-video .hero-video-text a:any-link:hover {
 .block.hero-video .hero-video-text .icon-arrow-blue img {
   width: 32px;
   height: 32px;
+}
+
+/* Product image in third cell */
+.block.hero-video > div > div:nth-child(3) {
+  flex-shrink: 0;
+}
+
+.block.hero-video > div > div:nth-child(3) img {
+  display: block;
+  max-height: 300px;
+  width: auto;
 }
 
 /* Video pause button */

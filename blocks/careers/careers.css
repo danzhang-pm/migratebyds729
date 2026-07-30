@@ -1,4 +1,4 @@
-/* ── Careers Block ── */
+/* Careers Block */
 main .careers-wrapper {
   max-width: 100% !important;
   padding: 0 !important;
@@ -12,18 +12,7 @@ main .careers {
   min-height: 754px;
 }
 
-main .careers > div {
-  position: static;
-  z-index: 1;
-  display: flex;
-  gap: 60px;
-  align-items: flex-start;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 110px 59px 100px;
-}
-
-/* Background image overlay */
+/* Background image via CSS variable (set by JS) */
 main .careers::before {
   content: '';
   position: absolute;
@@ -39,14 +28,14 @@ main .careers::before {
 }
 
 main .careers > div {
-  position: static;
+  position: relative;
   z-index: 1;
   display: flex;
   gap: 60px;
   align-items: flex-start;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 110px 59px 0;
+  padding: 110px 59px 100px;
 }
 
 /* Left content column */
@@ -79,8 +68,8 @@ main .careers > div {
   margin: 0 0 32px;
 }
 
-/* CTA button - "Join the team" */
-main .careers .button-wrapper a.button:any-link {
+/* Join the team button */
+main .careers .careers-left a[href*="MedtronicCareers"]:first-of-type {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -96,40 +85,14 @@ main .careers .button-wrapper a.button:any-link {
   white-space: nowrap;
 }
 
-main .careers .button-wrapper a.button:any-link:hover {
+main .careers .careers-left a[href*="MedtronicCareers"]:first-of-type:hover {
   background: #1010eb;
 }
 
-/* Career links below the button */
-.careers-left .button-wrapper + .button-wrapper {
-  margin-top: 24px;
-}
-
-main .careers .button-wrapper {
-  display: block;
-}
-
-main .careers a.button:any-link {
-  color: #4a7dff;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: none;
-  border: none;
-  padding: 0;
-  text-align: left;
-  white-space: normal;
-}
-
-main .careers a.button:any-link:hover {
-  color: #87b2ff;
-}
-
-/* Non-button career links (Explore, Talent Network) */
-.careers-left p a:any-link {
+/* Career links (Explore, Talent Network) */
+.careers-left p:not(:has(a[href*="MedtronicCareers"])) a:any-link,
+.careers-left p a[href*="careers"]:any-link,
+.careers-left p a[href*="introduceYourself"]:any-link {
   color: #4a7dff;
   font-size: 18px;
   font-weight: 400;
@@ -139,17 +102,12 @@ main .careers a.button:any-link:hover {
   gap: 8px;
 }
 
-.careers-left p a:any-link:hover {
+.careers-left p a[href*="careers"]:any-link:hover,
+.careers-left p a[href*="introduceYourself"]:any-link:hover {
   color: #87b2ff;
 }
 
 /* Separator between career links */
-.careers-left .button-wrapper + p {
-  border-top: 1px solid rgba(255, 255, 255, 0.35);
-  padding-top: 15px;
-  margin-top: 15px;
-}
-
 .careers-left p + p {
   border-top: 1px solid rgba(255, 255, 255, 0.35);
   padding-top: 15px;
@@ -158,15 +116,9 @@ main .careers a.button:any-link:hover {
 
 /* Right column - job tiles */
 .careers-right {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
   display: flex;
   gap: 2px;
-}
-
-.careers-right .button-wrapper {
-  display: block;
+  flex-shrink: 0;
 }
 
 .careers-right a:any-link {
@@ -195,14 +147,10 @@ main .careers a.button:any-link:hover {
   background: #4a7dff;
 }
 
-.careers-right a:any-link picture,
 .careers-right a:any-link img {
   width: 32px;
   height: 32px;
   display: block;
-}
-
-.careers-right a:any-link img {
   filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
@@ -228,7 +176,7 @@ main .careers a.button:any-link:hover {
     font-size: 16px;
   }
 
-  main .careers .button-container a.button:any-link {
+  main .careers .careers-left a[href*="MedtronicCareers"]:first-of-type {
     width: 100%;
     justify-content: center;
   }
@@ -240,11 +188,10 @@ main .careers a.button:any-link:hover {
   .careers-right {
     width: 100%;
     justify-content: center;
-    align-self: center;
     flex-wrap: wrap;
   }
 
-  .careers-right a.button:any-link {
+  .careers-right a:any-link {
     width: 107px;
     height: 102px;
     font-size: 14px;
