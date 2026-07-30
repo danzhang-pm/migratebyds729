@@ -1,0 +1,250 @@
+/* Banner Video Block */
+main .banner-video-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.banner-video {
+  --block-bg: #1E1E1E;
+  --block-text: #fff;
+  --accent-color: #4A7DFF;
+  --info-bar-bg: rgb(12 12 165 / 60%);
+
+  background: var(--block-bg);
+  color: var(--block-text);
+  display: flex;
+  padding: 80px 59px 60px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.banner-video > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.banner-video-left {
+  flex: 1 1 0%;
+  align-self: flex-start;
+  position: relative;
+  z-index: 2;
+  margin-right: -95px;
+  min-width: 0;
+}
+
+.banner-video-right {
+  flex: 2 1 0%;
+  position: relative;
+  min-width: 0;
+}
+
+/* Eyebrow */
+.banner-video .eyebrow {
+  color: rgb(255 255 255 / 70%);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 21px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.banner-video .eyebrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 192px;
+  height: 1px;
+  background-color: rgb(255 255 255 / 35%);
+}
+
+/* Headline */
+.banner-video h2 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 33px 0 20px;
+  font-family: var(--heading-font-family, "AvenirNextWorld", "avenir next", avenir, helvetica, arial, sans-serif);
+}
+
+/* Description copy */
+.banner-video .copy {
+  color: #fff;
+  font-size: 20px;
+  line-height: 160%;
+  max-width: 304px;
+  margin: 0 0 20px;
+}
+
+/* CTA section */
+.banner-video .cta-wrapper {
+  position: relative;
+  padding: 10px 32px 14px 0;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+}
+
+main .banner-video a.button:any-link {
+  color: var(--accent-color);
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  white-space: normal;
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+main .banner-video .button-wrapper {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+main .banner-video .button-wrapper::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+main .banner-video .cta-wrapper:hover::after {
+  transform: translate(5px, -50%);
+}
+
+/* Video */
+.banner-video video {
+  width: 100%;
+  height: auto;
+  max-width: 1008px;
+  display: block;
+}
+
+/* Info Bar */
+.banner-video .info-bar {
+  position: absolute;
+  bottom: 13px;
+  right: 37px;
+  width: 55%;
+  background-color: var(--info-bar-bg);
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-video .info-bar > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-video .stat-value {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(32px, 4vw, 72px);
+  font-weight: 200;
+  line-height: 120%;
+  font-family: var(--heading-font-family, "AvenirNextWorld", "avenir next", avenir, helvetica, arial, sans-serif);
+}
+
+.banner-video .stat-label {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(12px, 1vw, 20px);
+  font-weight: 500;
+  line-height: 160%;
+  font-family: var(--heading-font-family, "AvenirNextWorld", "avenir next", avenir, helvetica, arial, sans-serif);
+}
+
+/* Bottom-right link */
+.banner-video .bottom-link {
+  position: absolute;
+  bottom: 6px;
+  right: 81px;
+  margin: 0;
+}
+
+.banner-video .bottom-link a {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 160%;
+  text-decoration: none;
+}
+
+.banner-video .bottom-link a:hover {
+  color: #fff;
+}
+
+/* Responsive - tablet/mobile */
+@media (width <= 820px) {
+  .banner-video > div {
+    flex-direction: column-reverse;
+  }
+
+  .banner-video-left {
+    margin-right: 0;
+    padding: 22px 53px 40px 23px;
+  }
+
+  .banner-video-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .banner-video .info-bar {
+    position: static;
+    width: 88%;
+    min-width: 329px;
+    min-height: 120px;
+    margin-top: -60px;
+    z-index: 99999;
+    border-radius: 10px;
+  }
+
+  .banner-video h2 {
+    font-size: 28px;
+  }
+
+  .banner-video .copy {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .banner-video .eyebrow::after {
+    width: 100%;
+  }
+
+  .banner-video .bottom-link {
+    position: static;
+    padding: 10px 0;
+  }
+}

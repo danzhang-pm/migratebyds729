@@ -1,0 +1,85 @@
+[
+  {
+    "name": "widget",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 2941,
+    "cssSize": 30
+  },
+  {
+    "name": "who-we-are",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 413,
+    "cssSize": 1583
+  },
+  {
+    "name": "impact-grid",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 6152,
+    "cssSize": 3063
+  },
+  {
+    "name": "hero",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 377,
+    "cssSize": 1652
+  },
+  {
+    "name": "header",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 6459,
+    "cssSize": 5380
+  },
+  {
+    "name": "fragment",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 1466,
+    "cssSize": 40
+  },
+  {
+    "name": "footer",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 674,
+    "cssSize": 302
+  },
+  {
+    "name": "columns",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 568,
+    "cssSize": 425
+  },
+  {
+    "name": "carousel",
+    "hasJs": true,
+    "hasCss": false,
+    "jsSize": 700
+  },
+  {
+    "name": "careers",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 473,
+    "cssSize": 2063
+  },
+  {
+    "name": "cards",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 745,
+    "cssSize": 431
+  },
+  {
+    "name": "banner-two-col",
+    "hasJs": true,
+    "hasCss": true,
+    "jsSize": 289,
+    "cssSize": 1180
+  }
+]

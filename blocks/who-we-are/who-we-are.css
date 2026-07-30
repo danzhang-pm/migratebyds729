@@ -1,0 +1,119 @@
+.block.who-we-are {
+  background: #1e1e1e;
+  padding: 80px 59px 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* Left column items */
+.block.who-we-are > div:nth-child(1),
+.block.who-we-are > div:nth-child(2),
+.block.who-we-are > div:nth-child(3),
+.block.who-we-are > div:nth-child(4) {
+  grid-column: 1;
+}
+
+/* Right column items */
+.block.who-we-are > div:nth-child(5),
+.block.who-we-are > div:nth-child(6),
+.block.who-we-are > div:nth-child(7) {
+  grid-column: 2;
+}
+
+/* Eyebrow - "Who We Are" */
+.block.who-we-are > div:nth-child(1) p {
+  color: #00a0e3;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 0 16px;
+}
+
+/* Heading - "Where health meets high tech" */
+.block.who-we-are > div:nth-child(2) p {
+  font-size: 52px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0 0 24px;
+}
+
+/* Description paragraph */
+.block.who-we-are > div:nth-child(3) p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6;
+  max-width: 304px;
+  margin: 0 0 32px;
+}
+
+/* Learn more link */
+.block.who-we-are > div:nth-child(4) a {
+  color: #00a0e3;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px solid #00a0e3;
+  padding-bottom: 4px;
+}
+
+.block.who-we-are > div:nth-child(4) a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Stat items */
+.block.who-we-are > div:nth-child(5) > div,
+.block.who-we-are > div:nth-child(6) > div,
+.block.who-we-are > div:nth-child(7) > div {
+  text-align: center;
+}
+
+.block.who-we-are > div:nth-child(5) p:first-child,
+.block.who-we-are > div:nth-child(6) p:first-child,
+.block.who-we-are > div:nth-child(7) p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.block.who-we-are > div:nth-child(5) p:last-child,
+.block.who-we-are > div:nth-child(6) p:last-child,
+.block.who-we-are > div:nth-child(7) p:last-child {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0;
+}
+
+@media (width <= 768px) {
+  .block.who-we-are {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+    gap: 40px;
+  }
+
+  .block.who-we-are > div:nth-child(1),
+  .block.who-we-are > div:nth-child(2),
+  .block.who-we-are > div:nth-child(3),
+  .block.who-we-are > div:nth-child(4),
+  .block.who-we-are > div:nth-child(5),
+  .block.who-we-are > div:nth-child(6),
+  .block.who-we-are > div:nth-child(7) {
+    grid-column: 1;
+  }
+
+  .block.who-we-are > div:nth-child(2) p {
+    font-size: 36px;
+  }
+
+  .block.who-we-are > div:nth-child(5) > div,
+  .block.who-we-are > div:nth-child(6) > div,
+  .block.who-we-are > div:nth-child(7) > div {
+    text-align: left;
+  }
+}

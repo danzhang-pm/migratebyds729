@@ -1,0 +1,232 @@
+.impact-grid {
+  --bg: #f5f5f5;
+  --text: #170f5f;
+  --link-color: #1010eb;
+  --impact-card-bg: linear-gradient(105deg, rgba(218, 8, 123, 0) 0%, #ac0460 51.75%, #9747ff 99.51%);
+  --impact-card-text: #ffffff;
+  --stat-bg: #ffffff;
+  --stat-text: #170f5f;
+  --stat-value-color: #1010eb;
+  --access-card-bg: #170f5f;
+  --access-card-text: #ffffff;
+  --eyebrow-size: 12px;
+  --subsection-gap: 32px;
+
+  background: var(--bg);
+  padding: 81px 66px;
+}
+
+/* Grid layout: gradient card spans left, access card to the right */
+.impact-grid > div {
+  display: grid;
+  grid-template-columns: 1fr 295px;
+  gap: var(--subsection-gap);
+}
+
+/* First child = gradient card (Our Impact) */
+.impact-grid > div > div:first-child {
+  background: var(--impact-card-bg);
+  color: var(--impact-card-text);
+  padding: 53px 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 498px;
+  box-sizing: border-box;
+}
+
+.impact-grid > div > div:first-child p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: var(--impact-card-text);
+  padding-bottom: 21px;
+  margin: 0;
+}
+
+.impact-grid > div > div:first-child h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 57px;
+  color: var(--impact-card-text);
+  padding: 40px 0;
+  margin: 0;
+}
+
+.impact-grid > div > div:first-child p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--impact-card-text);
+  margin: 0;
+}
+
+.impact-grid > div > div:first-child a:any-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--impact-card-text);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Second child = access card (Impact Report) */
+.impact-grid > div > div:nth-child(2) {
+  background: var(--access-card-bg);
+  color: var(--access-card-text);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  grid-row: span 4;
+}
+
+.impact-grid > div > div:nth-child(2) picture {
+  line-height: 0;
+  display: block;
+}
+
+.impact-grid > div > div:nth-child(2) img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.impact-grid > div > div:nth-child(2) > div:last-child {
+  padding: 0 22px 30px 30px;
+}
+
+.impact-grid > div > div:nth-child(2) p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  color: var(--access-card-text);
+  padding: 21px 22px 0 30px;
+  margin: 0;
+}
+
+.impact-grid > div > div:nth-child(2) h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  color: var(--access-card-text);
+  margin: 8px 0;
+  padding: 0 22px 0 30px;
+}
+
+.impact-grid > div > div:nth-child(2) p:nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: var(--access-card-text);
+  margin: 0;
+  padding: 8px 22px 0 30px;
+}
+
+.impact-grid > div > div:nth-child(2) a:any-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #4a7dff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0 22px 30px 30px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Stat items */
+.impact-grid > div > div:nth-child(3),
+.impact-grid > div > div:nth-child(4),
+.impact-grid > div > div:nth-child(5) {
+  background: var(--stat-bg);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.impact-grid > div > div:nth-child(3) p:first-child,
+.impact-grid > div > div:nth-child(4) p:first-child,
+.impact-grid > div > div:nth-child(5) p:first-child {
+  font-size: 72px;
+  font-weight: 200;
+  line-height: 86.4px;
+  color: var(--stat-value-color);
+  margin: 0;
+}
+
+.impact-grid > div > div:nth-child(3) p:nth-child(2),
+.impact-grid > div > div:nth-child(4) p:nth-child(2),
+.impact-grid > div > div:nth-child(5) p:nth-child(2) {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30.4px;
+  color: var(--stat-text);
+  margin: 0;
+}
+
+/* Link on last stat */
+.impact-grid > div > div:nth-child(5) a:any-link {
+  position: absolute;
+  bottom: 26px;
+  right: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+@media (width <= 900px) {
+  .impact-grid {
+    padding: 40px 20px;
+  }
+
+  .impact-grid > div {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-grid > div > div:first-child {
+    min-height: auto;
+    padding: 40px 30px;
+  }
+
+  .impact-grid > div > div:first-child h2 {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 20px 0;
+  }
+
+  .impact-grid > div > div:nth-child(2) {
+    grid-row: auto;
+  }
+
+  .impact-grid > div > div:nth-child(3) p:first-child,
+  .impact-grid > div > div:nth-child(4) p:first-child,
+  .impact-grid > div > div:nth-child(5) p:first-child {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .impact-grid > div > div:nth-child(5) a:any-link {
+    position: static;
+    margin-top: 12px;
+  }
+}
